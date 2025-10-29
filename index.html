@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunil Kumar | Bento Designer Portfolio</title>
+    <!-- Load Tailwind CSS CDN first -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Set Inter as the primary font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- FIX: Moved Tailwind configuration into a standard <script> block 
+         so it runs correctly on a hosted site, not just in the editor. -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#000000', /* PURE BLACK */
+                        'module-bg': '#0A0A0A',  /* Very slightly lighter black for module blocks */
+                        'border-subtle': '#333333', /* Dark Grey border/separator */
+                        'text-subtle': '#B0B0B0', /* Light Grey for secondary text */
+                        'accent-dark': '#404040', /* Dark gray for pill buttons */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom styles that do not rely on the Tailwind config object */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar reset */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333333;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-primary-bg text-white font-sans min-h-screen p-4 md:p-8">
+
+    <!-- Bento Grid Container (3-column layout on large screens) -->
+    <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Profile Photo and Intro Text (Spans 3 columns on large screens for the top section) -->
+        <section class="lg:col-span-3 bg-primary-bg flex flex-col md:flex-row items-start gap-6">
+            <!-- Profile Card -->
+            <div class="w-full md:w-1/4 lg:w-1/6 flex-shrink-0 bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
+                <img src="https://placehold.co/150x150/0A0A0A/FFF?text=AVATAR" alt="Sunil Kumar Avatar" class="rounded-full w-full h-auto object-cover border-4 border-border-subtle">
+            </div>
+            
+            <!-- Intro Text & Interests -->
+            <div class="flex-grow space-y-4">
+                <p class="text-white text-xl md:text-2xl font-light leading-relaxed">
+                    My name is <span class="font-semibold">Sunil Kumar</span>, self-taught logo/brand designer with <span class="text-text-subtle">4+ years of experience</span> creating modern, clean, and minimal brands that make a lasting impression.
+                </p>
+
+                <!-- Interests Bar -->
+                <div class="flex flex-wrap gap-2 pt-4">
+                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Gaming</span>
+                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Film Making</span>
+                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Traveling</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Work Experience 1: Freelancer (Spans 1 column) -->
+        <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-white">Freelancer</h3>
+                <span class="text-sm text-text-subtle">2021 - now</span>
+            </div>
+            <p class="text-text-subtle font-medium mb-3">Logo/Brand Designer</p>
+            <ul class="list-disc list-outside space-y-2 pl-5 text-sm text-gray-300">
+                <li>Worked on diverse logo and brand identity projects.</li>
+                <li>Collaborated with clients from multiple countries.</li>
+                <li>Developed a versatile design skill set.</li>
+            </ul>
+        </div>
+
+        <!-- 3. Work Experience 2: Meetzed (Spans 1 column) -->
+        <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-white">Meetzed</h3>
+                <span class="text-sm text-text-subtle">2020 - 2021</span>
+            </div>
+            <p class="text-text-subtle font-medium mb-3">Graphic Designer</p>
+            <ul class="list-disc list-outside space-y-2 pl-5 text-sm text-gray-300">
+                <li>Supported Lead Designer on projects.</li>
+                <li>Branding: Crafted unique brand identities.</li>
+                <li>Tools: Used Illustrator, Photoshop & InDesign.</li>
+            </ul>
+        </div>
+
+        <!-- 4. Education (Vertical Stack, Spans 1 column) -->
+        <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50 space-y-6">
+            <h3 class="text-xl font-bold text-white">Education</h3>
+
+            <div class="space-y-1">
+                <p class="text-lg font-medium text-white">Graduation</p>
+                <p class="text-sm text-text-subtle">Bachelor of Fine Arts</p>
+                <p class="text-xs text-gray-400">IGNOU Delhi, India, 2017-21</p>
+            </div>
+
+            <div class="space-y-1">
+                <p class="text-lg font-medium text-white">Diploma</p>
+                <p class="text-sm text-text-subtle">Animation and Graphic Design</p>
+                <p class="text-xs text-gray-400">Delhi, India, 2017-18</p>
+            </div>
+            
+            <div class="space-y-1">
+                <p class="text-lg font-medium text-white">High School</p>
+                <p class="text-sm text-text-subtle">Humanities</p>
+                <p class="text-xs text-gray-400">Delhi Cantonment, India, 2017</p>
+            </div>
+        </div>
+        
+        <!-- 5. Design Tools (Spans 1 column) -->
+        <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
+            <h3 class="text-xl font-bold text-white mb-4">Design Tools</h3>
+            <div class="flex space-x-4 items-center">
+                <!-- Placeholder Icons - AI, PS, ID, XD -->
+                <img src="https://placehold.co/40x40/000/FF9A00?text=Ai" alt="Illustrator" class="rounded">
+                <img src="https://placehold.co/40x40/000/31C5F0?text=Ps" alt="Photoshop" class="rounded">
+                <img src="https://placehold.co/40x40/000/FF0066?text=Id" alt="InDesign" class="rounded">
+                <img src="https://placehold.co/40x40/000/4C00FF?text=Xd" alt="XD" class="rounded">
+            </div>
+        </div>
+
+        <!-- 6. Editing Tools (Spans 1 column) -->
+        <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
+            <h3 class="text-xl font-bold text-white mb-4">Editing Tools</h3>
+            <div class="flex space-x-4 items-center">
+                <!-- Placeholder Icons - AE, PR -->
+                <img src="https://placehold.co/40x40/000/9999FF?text=Ae" alt="After Effects" class="rounded">
+                <img src="https://placehold.co/40x40/000/C80000?text=Pr" alt="Premiere" class="rounded">
+            </div>
+        </div>
+        
+        <!-- 7. Languages (Spans 1 column) -->
+        <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
+            <h3 class="text-xl font-bold text-white mb-4">Languages</h3>
+            <div class="flex space-x-4">
+                <!-- Flag Placeholders -->
+                <img src="https://placehold.co/40x25/FFFFFF/000000?text=🇬🇧" alt="English" class="border border-border-subtle">
+                <img src="https://placehold.co/40x25/FFFFFF/000000?text=🇮🇳" alt="Hindi" class="border border-border-subtle">
+                <img src="https://placehold.co/40x25/FFFFFF/000000?text=🇺🇸" alt="American English" class="border border-border-subtle">
+            </div>
+        </div>
+        
+        <!-- 8. Portfolio Links (Spans 2 columns) -->
+        <div class="md:col-span-2 lg:col-span-2 bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
+            <h3 class="text-xl font-bold text-white mb-4">Portfolio</h3>
+            <div class="flex flex-wrap gap-4 items-center">
+                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/FFF?text=B" alt="Bento Icon" class="rounded-full border border-border-subtle">
+                    <span>Bento</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/E91E63?text=Be" alt="Behance Icon" class="rounded-full border border-border-subtle">
+                    <span>Behance</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/F44336?text=IG" alt="Instagram Icon" class="rounded-full border border-border-subtle">
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/FF0000?text=YT" alt="Youtube Icon" class="rounded-full border border-border-subtle">
+                    <span>Youtube</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/FF4081?text=D" alt="Dribbble Icon" class="rounded-full border border-border-subtle">
+                    <span>Dribbble</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- 9. Contact Details (Spans 3 columns) -->
+        <div id="contact" class="lg:col-span-3 bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
+            <h3 class="text-xl font-bold text-white mb-4">Details</h3>
+            <div class="flex flex-wrap gap-6 md:gap-8 text-text-subtle">
+                <div class="flex items-center space-x-2">
+                    <span class="text-white text-2xl">🎂</span>
+                    <span class="text-white">26 years</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-white text-2xl">📧</span>
+                    <a href="mailto:iamsunilfreelancer.com" class="hover:text-white transition duration-200">iamsunilfreelancer.com</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-white text-2xl">📞</span>
+                    <a href="tel:+919899052055" class="hover:text-white transition duration-200">+91 9899052055</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-white text-2xl">🇮🇳</span>
+                    <span class="text-white">India</span>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+</body>
+</html>
