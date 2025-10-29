@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Kumar | Bento Designer Portfolio</title>
+    <title>Rohan Sharma | CS Graduate Portfolio</title>
     <!-- Load Tailwind CSS CDN first -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Set Inter as the primary font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=100..900&display=swap" rel="stylesheet">
     
     <!-- FIX: Moved Tailwind configuration into a standard <script> block 
          so it runs correctly on a hosted site, not just in the editor. -->
@@ -57,49 +57,50 @@
         <section class="lg:col-span-3 bg-primary-bg flex flex-col md:flex-row items-start gap-6">
             <!-- Profile Card -->
             <div class="w-full md:w-1/4 lg:w-1/6 flex-shrink-0 bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
-                <img src="Kermit.jpg" alt="Sunil Kumar Avatar" class="rounded-full w-full h-auto object-cover border-4 border-border-subtle">
+                <!-- IMPORTANT: Replace the 'src' value below with the URL of your actual profile picture. -->
+                <img src="Kermit.jpg" class="rounded-full w-full h-auto object-cover border-4 border-border-subtle">
             </div>
             
-            <!-- Intro Text & Interests -->
+            <!-- Intro Text & Expertise -->
             <div class="flex-grow space-y-4">
                 <p class="text-white text-xl md:text-2xl font-light leading-relaxed">
-                    My name is <span class="font-semibold">Sunil Kumar</span>, self-taught logo/brand designer with <span class="text-text-subtle">4+ years of experience</span> creating modern, clean, and minimal brands that make a lasting impression.
+                    My name is <span class="font-semibold">Rohan Sharma</span>, a recent Computer Science graduate specializing in <span class="text-text-subtle">Full-Stack Development and scalable systems</span>, with a passion for algorithms and clean code architecture.
                 </p>
 
                 <!-- Interests Bar -->
                 <div class="flex flex-wrap gap-2 pt-4">
-                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Gaming</span>
-                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Film Making</span>
-                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Traveling</span>
+                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Algorithms</span>
+                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Open Source</span>
+                    <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">System Design</span>
                 </div>
             </div>
         </section>
 
-        <!-- 2. Work Experience 1: Freelancer (Spans 1 column) -->
+        <!-- 2. Work Experience 1: Software Developer Internship (Spans 1 column) -->
         <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-bold text-white">Freelancer</h3>
-                <span class="text-sm text-text-subtle">2021 - now</span>
+                <h3 class="text-xl font-bold text-white">SoftDev Inc.</h3>
+                <span class="text-sm text-text-subtle">Summer 2023</span>
             </div>
-            <p class="text-text-subtle font-medium mb-3">Logo/Brand Designer</p>
+            <p class="text-text-subtle font-medium mb-3">Software Developer Intern</p>
             <ul class="list-disc list-outside space-y-2 pl-5 text-sm text-gray-300">
-                <li>Worked on diverse logo and brand identity projects.</li>
-                <li>Collaborated with clients from multiple countries.</li>
-                <li>Developed a versatile design skill set.</li>
+                <li>Developed microservices using **Node.js** and **TypeScript** to optimize API latency by 15%.</li>
+                <li>Contributed to CI/CD pipeline improvements using **Docker** and Jenkins.</li>
+                <li>Implemented unit and integration tests across 3 major features.</li>
             </ul>
         </div>
 
-        <!-- 3. Work Experience 2: Meetzed (Spans 1 column) -->
+        <!-- 3. Key Project: E-commerce Platform (Spans 1 column) -->
         <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-bold text-white">Meetzed</h3>
-                <span class="text-sm text-text-subtle">2020 - 2021</span>
+                <h3 class="text-xl font-bold text-white">E-Commerce Capstone</h3>
+                <span class="text-sm text-text-subtle">Jan - May 2024</span>
             </div>
-            <p class="text-text-subtle font-medium mb-3">Graphic Designer</p>
+            <p class="text-text-subtle font-medium mb-3">Full-Stack Development</p>
             <ul class="list-disc list-outside space-y-2 pl-5 text-sm text-gray-300">
-                <li>Supported Lead Designer on projects.</li>
-                <li>Branding: Crafted unique brand identities.</li>
-                <li>Tools: Used Illustrator, Photoshop & InDesign.</li>
+                <li>Built a responsive front-end using **React** and Tailwind CSS.</li>
+                <li>Managed product inventory and user data via **PostgreSQL** database.</li>
+                <li>Secured API endpoints using **JWT** authentication.</li>
             </ul>
         </div>
 
@@ -108,103 +109,97 @@
             <h3 class="text-xl font-bold text-white">Education</h3>
 
             <div class="space-y-1">
-                <p class="text-lg font-medium text-white">Graduation</p>
-                <p class="text-sm text-text-subtle">Bachelor of Fine Arts</p>
-                <p class="text-xs text-gray-400">IGNOU Delhi, India, 2017-21</p>
+                <p class="text-lg font-medium text-white">B.Tech (C.S.)</p>
+                <p class="text-sm text-text-subtle">Computer Science & Engineering</p>
+                <p class="text-xs text-gray-400">Delhi Technical University, 2020-2024</p>
             </div>
 
             <div class="space-y-1">
-                <p class="text-lg font-medium text-white">Diploma</p>
-                <p class="text-sm text-text-subtle">Animation and Graphic Design</p>
-                <p class="text-xs text-gray-400">Delhi, India, 2017-18</p>
+                <p class="text-lg font-medium text-white">Certification</p>
+                <p class="text-sm text-text-subtle">Cloud Practitioner (AWS)</p>
+                <p class="text-xs text-gray-400">Online, 2024</p>
             </div>
             
             <div class="space-y-1">
                 <p class="text-lg font-medium text-white">High School</p>
-                <p class="text-sm text-text-subtle">Humanities</p>
-                <p class="text-xs text-gray-400">Delhi Cantonment, India, 2017</p>
+                <p class="text-sm text-text-subtle">Science Stream</p>
+                <p class="text-xs text-gray-400">DPS R.K. Puram, 2020</p>
             </div>
         </div>
         
-        <!-- 5. Design Tools (Spans 1 column) -->
+        <!-- 5. Technical Skills: Languages & Core (Spans 1 column) -->
         <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
-            <h3 class="text-xl font-bold text-white mb-4">Design Tools</h3>
-            <div class="flex space-x-4 items-center">
-                <!-- Placeholder Icons - AI, PS, ID, XD -->
-                <img src="https://placehold.co/40x40/000/FF9A00?text=Ai" alt="Illustrator" class="rounded">
-                <img src="https://placehold.co/40x40/000/31C5F0?text=Ps" alt="Photoshop" class="rounded">
-                <img src="https://placehold.co/40x40/000/FF0066?text=Id" alt="InDesign" class="rounded">
-                <img src="https://placehold.co/40x40/000/4C00FF?text=Xd" alt="XD" class="rounded">
+            <h3 class="text-xl font-bold text-white mb-4">Languages & Core</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Python</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">JavaScript</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Java</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">C++</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Data Structures</span>
             </div>
         </div>
 
-        <!-- 6. Editing Tools (Spans 1 column) -->
+        <!-- 6. Technical Skills: Web Frameworks & DB (Spans 1 column) -->
         <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
-            <h3 class="text-xl font-bold text-white mb-4">Editing Tools</h3>
-            <div class="flex space-x-4 items-center">
-                <!-- Placeholder Icons - AE, PR -->
-                <img src="https://placehold.co/40x40/000/9999FF?text=Ae" alt="After Effects" class="rounded">
-                <img src="https://placehold.co/40x40/000/C80000?text=Pr" alt="Premiere" class="rounded">
+            <h3 class="text-xl font-bold text-white mb-4">Web Frameworks & DB</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">React</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Node.js</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Django</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">SQL (Postgres)</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">MongoDB</span>
             </div>
         </div>
         
-        <!-- 7. Languages (Spans 1 column) -->
+        <!-- 7. DevOps & Tools (Spans 1 column) -->
         <div class="bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
-            <h3 class="text-xl font-bold text-white mb-4">Languages</h3>
-            <div class="flex space-x-4">
-                <!-- Flag Placeholders -->
-                <img src="https://placehold.co/40x25/FFFFFF/000000?text=🇬🇧" alt="English" class="border border-border-subtle">
-                <img src="https://placehold.co/40x25/FFFFFF/000000?text=🇮🇳" alt="Hindi" class="border border-border-subtle">
-                <img src="https://placehold.co/40x25/FFFFFF/000000?text=🇺🇸" alt="American English" class="border border-border-subtle">
+            <h3 class="text-xl font-bold text-white mb-4">DevOps & Tools</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Git & GitHub</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">Docker</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">AWS/Cloud</span>
+                <span class="px-3 py-1 text-sm font-medium rounded-full bg-accent-dark text-white border border-border-subtle">JIRA</span>
             </div>
         </div>
         
         <!-- 8. Portfolio Links (Spans 2 columns) -->
         <div class="md:col-span-2 lg:col-span-2 bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
-            <h3 class="text-xl font-bold text-white mb-4">Portfolio</h3>
+            <h3 class="text-xl font-bold text-white mb-4">Online Presence</h3>
             <div class="flex flex-wrap gap-4 items-center">
-                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
-                    <img src="https://placehold.co/30x30/0A0A0A/FFF?text=B" alt="Bento Icon" class="rounded-full border border-border-subtle">
-                    <span>Bento</span>
+                <a href="https://github.com/rohan-sharma" target="_blank" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/FFF?text=GH" alt="GitHub Icon" class="rounded-full border border-border-subtle">
+                    <span>GitHub</span>
                 </a>
-                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
-                    <img src="https://placehold.co/30x30/0A0A0A/E91E63?text=Be" alt="Behance Icon" class="rounded-full border border-border-subtle">
-                    <span>Behance</span>
+                <a href="https://linkedin.com/in/rohan-sharma" target="_blank" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/0077B5?text=LI" alt="LinkedIn Icon" class="rounded-full border border-border-subtle">
+                    <span>LinkedIn</span>
                 </a>
-                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
-                    <img src="https://placehold.co/30x30/0A0A0A/F44336?text=IG" alt="Instagram Icon" class="rounded-full border border-border-subtle">
-                    <span>Instagram</span>
+                <a href="https://yourpersonalsite.com" target="_blank" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/F44336?text=Web" alt="Personal Site Icon" class="rounded-full border border-border-subtle">
+                    <span>Personal Site</span>
                 </a>
-                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
-                    <img src="https://placehold.co/30x30/0A0A0A/FF0000?text=YT" alt="Youtube Icon" class="rounded-full border border-border-subtle">
-                    <span>Youtube</span>
-                </a>
-                <a href="#" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
-                    <img src="https://placehold.co/30x30/0A0A0A/FF4081?text=D" alt="Dribbble Icon" class="rounded-full border border-border-subtle">
-                    <span>Dribbble</span>
+                <a href="https://leetcode.com/rohan-sharma" target="_blank" class="flex items-center space-x-2 text-white hover:text-text-subtle transition duration-200">
+                    <img src="https://placehold.co/30x30/0A0A0A/FF8000?text=LC" alt="LeetCode Icon" class="rounded-full border border-border-subtle">
+                    <span>LeetCode</span>
                 </a>
             </div>
         </div>
         
         <!-- 9. Contact Details (Spans 3 columns) -->
         <div id="contact" class="lg:col-span-3 bg-module-bg p-6 rounded-xl border border-border-subtle shadow-lg shadow-black/50">
-            <h3 class="text-xl font-bold text-white mb-4">Details</h3>
+            <h3 class="text-xl font-bold text-white mb-4">Contact Details</h3>
             <div class="flex flex-wrap gap-6 md:gap-8 text-text-subtle">
                 <div class="flex items-center space-x-2">
-                    <span class="text-white text-2xl">🎂</span>
-                    <span class="text-white">26 years</span>
-                </div>
-                <div class="flex items-center space-x-2">
                     <span class="text-white text-2xl">📧</span>
-                    <a href="mailto:iamsunilfreelancer.com" class="hover:text-white transition duration-200">iamsunilfreelancer.com</a>
+                    <a href="mailto:rohan.sharma.dev@email.com" class="hover:text-white transition duration-200">rohan.sharma.dev@email.com</a>
                 </div>
                 <div class="flex items-center space-x-2">
                     <span class="text-white text-2xl">📞</span>
-                    <a href="tel:+919899052055" class="hover:text-white transition duration-200">+91 9899052055</a>
+                    <a href="tel:+919876543210" class="hover:text-white transition duration-200">+91 98765 43210</a>
                 </div>
                 <div class="flex items-center space-x-2">
                     <span class="text-white text-2xl">🇮🇳</span>
-                    <span class="text-white">India</span>
+                    <span class="text-white">New Delhi, India (Open to Relocate)</span>
                 </div>
             </div>
         </div>
@@ -213,4 +208,3 @@
 
 </body>
 </html>
-
